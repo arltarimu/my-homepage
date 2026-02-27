@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>알타리무 Portfolio</title>
+  <title>MIO - VRChat 프로 암컷</title>
   <style>
     /* CSS Reset & Base */
     body, html { 
@@ -17,11 +17,11 @@
 
     /* Typography */
     h1 { 
-      font-size: 5rem; 
+      font-size: 6rem; 
       font-weight: 800; 
       letter-spacing: -0.05em; 
       margin: 0; 
-      background: linear-gradient(180deg, #fff, #a1a1a6);
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -29,26 +29,23 @@
       font-size: 3.5rem; 
       font-weight: 700; 
       letter-spacing: -0.04em; 
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 600;
       color: #fff;
-      margin: 0 0 0.5rem 0;
+      margin: 0 0 0.8rem 0;
     }
     p { 
-      font-size: 1.5rem; 
+      font-size: 1.4rem; 
       font-weight: 400; 
       color: #86868b; 
       line-height: 1.5;
       margin: 0;
     }
-    .accent {
-      color: #2997ff;
-    }
-
-    /* Layout & Utilities */
+    
+    /* Layout */
     .section { 
       min-height: 100vh; 
       display: flex; 
@@ -58,26 +55,6 @@
       text-align: center; 
       padding: 100px 20px; 
       box-sizing: border-box;
-    }
-
-    /* Profile Photo Placeholder */
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: #1d1d1f;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
-      color: #86868b;
-      font-size: 0.9rem;
-      border: 1px solid rgba(255,255,255,0.1);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .profile-pic:hover {
-      transform: scale(1.05);
     }
 
     /* Animations */
@@ -119,138 +96,128 @@
       letter-spacing: 0.15em; 
     }
 
-    /* Grid Layouts for Info */
+    /* Cards */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
       width: 100%;
-      max-width: 1000px;
-      margin-top: 3rem;
+      max-width: 1100px;
+      margin-top: 4rem;
     }
     .card {
       background: #111111;
-      border-radius: 24px;
-      padding: 40px 30px;
-      text-align: center;
+      border-radius: 28px;
+      padding: 50px 40px;
+      text-align: left;
       border: 1px solid rgba(255,255,255,0.03);
-      transition: transform 0.3s ease, background 0.3s ease;
+      transition: transform 0.4s ease;
     }
     .card:hover {
-      transform: translateY(-5px);
-      background: #1a1a1a;
-    }
-    
-    /* Philosophy Section Typography */
-    .philosophy-text {
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-    }
-    .philosophy-sub {
-      font-size: 1.8rem;
-      color: #86868b;
-      margin-top: 1rem;
-      font-weight: 300;
+      transform: scale(1.02);
+      background: #161616;
     }
 
-    /* Contact Button */
-    .contact-btn {
-      display: inline-block;
+    /* Focus Text */
+    .focus-text {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      gap: 15px;
       margin-top: 2rem;
-      padding: 15px 30px;
-      background: #f5f5f7;
-      color: #000;
-      text-decoration: none;
+      justify-content: center;
+    }
+    .btn {
+      padding: 15px 35px;
       border-radius: 30px;
       font-size: 1.1rem;
       font-weight: 600;
+      text-decoration: none;
       transition: all 0.3s ease;
     }
-    .contact-btn:hover {
+    .btn-primary {
+      background: #f5f5f7;
+      color: #000;
+    }
+    .btn-primary:hover {
       background: #fff;
       transform: scale(1.05);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.2);
     }
   </style>
 </head>
 <body>
 
   <nav class="glass-nav">
-    <span>ALTARI RADISH</span>
+    <span>MIO. VRC SLAVE.</span>
   </nav>
 
   <section class="section">
     <div class="hero-animate" style="display: flex; flex-direction: column; align-items: center;">
-      <div class="profile-pic">
-        사진(추후 삽입예정)
-      </div>
-      <h1>알타리무</h1>
-      <p style="margin-top: 1rem; font-size: 2rem; color: #f5f5f7;">일 안하는 개 레전드 월급루팡</p>
-      <p style="margin-top: 0.5rem; font-size: 1.2rem;">VRChat의 거물</p>
+      <h1>Mio.</h1>
+      <p style="margin-top: 1rem; font-size: 2.2rem; color: #f5f5f7; font-weight: 600;">Show and Prove.</p>
+      <p style="margin-top: 0.5rem; font-size: 1.3rem;">가천대가 낳고 VRChat이 길러낸 심연의 암컷.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="reveal">
-      <h2>핵심 인프라.</h2>
-      <p>단단한 기반에서 나오는 끝없는 여유.</p>
-    </div>
-    <div class="grid-container">
-      <div class="card reveal" style="transition-delay: 0.1s;">
-        <h3>Education</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px;">서울과학기술대학교<br>융합기계공학과 재학중</p>
-      </div>
-      <div class="card reveal" style="transition-delay: 0.2s;">
-        <h3>Relationship</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px; color: #ff3b30;">여친보유</p>
-      </div>
-      <div class="card reveal" style="transition-delay: 0.3s;">
-        <h3>Metaverse</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px;">VRChat 거물급 인사</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="reveal">
-      <h2>공인된 능력.</h2>
-      <p>프로 월급루팡을 완성하는 압도적인 스펙.</p>
+      <h2>숨막히는 ERP 테크닉.</h2>
+      <p>수도 없는 사이버 교미로 단련된 쫀득한 롤플레잉 성능.</p>
     </div>
     <div class="grid-container">
       <div class="card reveal">
-        <h3>기계 설계</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px;">전산응용기계제도 기능사</p>
+        <div class="focus-text">ERP Authority.</div>
+        <h3>1티어 암컷타락</h3>
+        <p>어설픈 컨셉질이 아닙니다. 수도 없는 ERP 경험으로 다져진 압도적이고 찰진 폼을 직접 보여드립니다.</p>
       </div>
       <div class="card reveal" style="transition-delay: 0.1s;">
-        <h3>사무 자동화</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px;">컴퓨터활용능력 2급</p>
-      </div>
-      <div class="card reveal" style="transition-delay: 0.2s;">
-        <h3>모빌리티</h3>
-        <p style="font-size: 1.1rem; margin-top: 10px;">자동차 운전면허증</p>
+        <div class="focus-text">Pioneer of Kipel.</div>
+        <h3>키펠주의의 선구자</h3>
+        <p>뇌수까지 절여진 키펠주의. 단순한 씹덕질을 넘어 하나의 불쾌한 메타버스를 완성했습니다.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background: #000;">
-    <div class="reveal" style="max-width: 800px;">
-      <div class="philosophy-text">
-        An Authority on Philosophy:<br>
-        <span style="color: #2997ff;">Erich Fromm</span>
-      </div>
-      <div class="philosophy-sub">
-        "The Art of Loving"
-      </div>
-      <p style="margin-top: 2rem; font-size: 1.1rem;">에리히 프롬의 철학을 마스터한 내면의 깊이.</p>
-    </div>
-  </section>
-
-  <section class="section" style="min-height: 60vh;">
+  <section class="section">
     <div class="reveal">
-      <h2>함께 농땡이 피우기.</h2>
-      <p>언제든 연락주세요. 일은 안 하지만 답장은 합니다.</p>
-      <a href="mailto:artarimu@icloud.com" class="contact-btn">artarimu@icloud.com</a>
+      <h2>유니티 깎는 진짜 씹변태.</h2>
+      <p>프로 씹페도의 검증된 로리콘력을 증명하는 집념의 아바타들.</p>
+    </div>
+    <div class="grid-container" style="max-width: 800px;">
+      <div class="card reveal" style="text-align: center; padding: 60px 40px;">
+        <h3>농ㅋㅋ 극의 (極意)</h3>
+        <p style="margin-top: 15px; font-size: 1.2rem;">
+          "폴리곤은 합법이거든요?"<br><br>
+          한 치의 오차도 허용하지 않는 메스가키 타락. 유니티를 수도 없이 만지며 깎아낸 <strong>말랑하고 쫀득한 데포르메</strong>에 대한 광적인 집착을 경험하십시오.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="min-height: 70vh; background: #0a0a0a;">
+    <div class="reveal">
+      <h2>가성비 쩌는 유니티 노예.</h2>
+      <p style="margin-bottom: 2rem;">돈만 주면 당신의 씹덕 망상, 3D로 다 싸질러 드립니다. 믿고 맡기세요.</p>
+      
+      <div class="btn-group">
+        <a href="https://x.com/vrc_Mio" target="_blank" class="btn btn-secondary">𝕏 @vrc_Mio 구경가기</a>
+        <a href="#" class="btn btn-primary" onclick="alert('Discord ID: tsuki_mio 를 복사했습니다! 당장 노예를 부려보세요.'); navigator.clipboard.writeText('tsuki_mio');">커미션 노예 호출: tsuki_mio</a>
+      </div>
     </div>
   </section>
 
